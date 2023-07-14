@@ -9,8 +9,8 @@
 int main(void)
 {
 
-char alphabet[24] = "abcdefghijklmnopqrstuvwxyz";
-for (int i = 0 ; i <= 24 ; i++)
+char alphabet[25] = "abcdefghijklmnopqrstuvwxyz";
+for (int i = 0 ; i <= 25 ; i++)
 {
 putchar(alphabet[i]);
 }
