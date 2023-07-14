@@ -9,10 +9,11 @@
 int main(void)
 {
 
-char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
-for (int i = 0 ; i <= 26 ; i++)
+char cha = 'a';
+while (cha <= 'z')
 {
-putchar(alphabet[i]);
+	putchar(cha);
+	cha++;
 }
 return (0);
 }
