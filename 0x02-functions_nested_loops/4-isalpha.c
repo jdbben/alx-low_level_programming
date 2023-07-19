@@ -6,7 +6,7 @@
  * Return: 1 if c is alphabet, 0 otherwise
  */
 
-int int _isalpha(int c)
+int _isalpha(int c)
 {
 if (isalpha(c))
 {
