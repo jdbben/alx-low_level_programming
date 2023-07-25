@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 #include <stdio.h>
 
 /**
@@ -9,5 +10,5 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	strcpy(dest,src);
+	_strcpy(dest,src);
 }
