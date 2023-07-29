@@ -1,4 +1,5 @@
 #include <string.h>
+#include <stdio.h>
 
 /**
  **_strcat - take 2 parameters and concatenates them .
@@ -9,6 +10,6 @@
 
 char *_strcat(char *dest, char *src)
 {
-	strcat(src, dest);
+	strcat(dest, src);
 	return (dest);
 }
