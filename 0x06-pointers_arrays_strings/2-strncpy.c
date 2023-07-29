@@ -1,4 +1,5 @@
 #include <string.h>
+#include <stdio.h>
 
 /**
  * _strncpy - concatenate strings, defining the size of second string.
