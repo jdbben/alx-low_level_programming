@@ -8,17 +8,16 @@
  */
 void reverse_array(int *a, int n)
 {
-	int i;
+	int swap, begin, end;
 
-	i = n - 1;
-	while (i > 0)
+	begin = 0;
+	end = n - 1;
+	while (begin < end)
 	{
-		if (i != (n - 1))
-		{
-			printf(", ");
-		}
-		printf("%d", a[i]);
-		i--;
+		swap = *(a + begin);
+		*(a + begin) = *(a + end);
+		*(a + end) = swap;
+		begin++;
+		end--;
 	}
-
 }
