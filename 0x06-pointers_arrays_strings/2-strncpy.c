@@ -6,10 +6,11 @@
  * @dest: string with concatenation
  * @src: string to be concatenated
  * @n: size of second string
- * Return: Always 0.
+ * Return: dest .
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
 	strncpy(dest , src, n);
+	return (dest);
 }
