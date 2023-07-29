@@ -1,17 +1,16 @@
 #include <string.h>
 #include <stdio.h>
 
-/*
- *_strncat - function ther concarenates two strings
- *
- *@dest: this is the output dest
- *@src: this the the src input
- *@n: bytes from the src
- *Return: pinter to the resulting string dest
+/**
+ * _strncat - concatenate strings, defining the size of second string.
+ * @dest: string with concatenation
+ * @src: string to be concatenated
+ * @n: size of second string
+ * Return: Always 0.
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
 	strncat(dest, src, n);
-       return (dest);	
+	return (dest);
 }
