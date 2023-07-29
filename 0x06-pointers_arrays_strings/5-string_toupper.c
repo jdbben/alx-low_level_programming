@@ -9,12 +9,12 @@
  */
 char *string_toupper(char *s)
 {
-	char *ptr = s;
+	char *pdtr = s;
 
-	while (*ptr != '\0')
+	while (*pdtr != '\0')
 	{
-		*ptr = toupper(*ptr);
-		*ptr++;
+		*pdtr = toupper(*pdtr);
+		*pdtr++;
 	}
 	return (s);
 
