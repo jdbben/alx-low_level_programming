@@ -1,4 +1,4 @@
-#include <string.h>
+#include "main.h"
 
 /**
  * _strpbrk - function that searches a string for any of a set of bytes
@@ -9,18 +9,17 @@
  *
  * Return: a pointer to the byte
  */
-
 char *_strpbrk(char *s, char *accept)
 {
-	char z;
-
-	z = strpbrk(s, accept);
-	if (z != NULL)
-	{
-		return (s);
-	}
-	else
-	{
-		return (NULL);
-	}
+	int i;
+		while (*s)
+		{
+			for (i = 0; accept[i]; i++)
+			{
+				if (*s == accept[i])
+					return (s);
+			}
+			s++;
+		}
+	return (NULL);
 }
