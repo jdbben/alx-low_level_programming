@@ -15,11 +15,4 @@ char *_strchr(char *s, char *c)
 {
 	strchr(s, c);
 
-	if (c == '\0')
-	{
-		return (s);
-	}
-
-	return (NULL);
-
 }
