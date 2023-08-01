@@ -17,10 +17,10 @@ char *_strpbrk(char *s, char *accept)
 	z = strpbrk(s, accept);
 	if (z != NULL)
 	{
-		return s;
+		return (s);
 	}
-	else if (z == NULL;
-			{
-			return NULL;
-			}
+	else
+	{
+		return (NULL);
+	}
 }
