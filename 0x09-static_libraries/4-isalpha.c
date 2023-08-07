@@ -1,19 +1,19 @@
-#include <ctype.h>
-
-/**
- *  * _isalpha - checks for alphabets
- *   * @c: the character to check
- *    * Return: 1 if c is alphabet, 0 otherwise
- *     */
+#include "main.h"
+/*
+ * _isalpha - check the the entry to deteminate if is lower or upper
+ *
+ * @c: This is the entry
+ * Return: Always 0.
+ */
 
 int _isalpha(int c)
 {
-	if (isalpha(c))
-	{
-			return (1);
-	}
-	else
-	{
-			return (0);
-	}
+		if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+				{
+							return (1);
+								}
+			else
+					{
+							return (0);
+								}
 }
